@@ -1,0 +1,19 @@
+准备两个邮箱   建议sina 15964001247@sina.cn和  aliyun
+确保telnet命令被允许使用
+
+cmd 命令行下：使用telnet 工具连接上某个邮箱服务的smtp服务器，
+
+
+一。命令演示
+telnet mail.qq.com 25      进入qq的服务器  
+helo hi      测试是否连通
+auth login          开始身份认证
+邮箱账号     base64编码字符串
+邮箱密码     base64编码字符串
+
+在身份验证成功之后可以写邮件了
+
+>mail from:<fajianren@youxiang.com>    //发件人的邮箱地址
+>rcpt to:<shoujianren@youxiang.com>     //收件人的邮箱地址
+
+输入  data  
