@@ -1,0 +1,14 @@
+1.创建php扩展的流程
+  我采用的是php源码的形式，进入php的ext扩展目录  新建一个def为后缀的文件 声明函数
+
+  利用命令 生成扩展骨架 
+
+  ./ext_skel --extname=ceshi --proto=ceshi.def
+
+  在生成的ceshi目录中  修改  config.m4文件   
+
+  PHP_ARG_ENABLE(myfunctions, whether to enable myfunctions support,
+  Make sure that the comment is aligned:
+  [ --enable-myfunctions Enable myfunctions support])  主要这几行 去掉dnl
+
+  
