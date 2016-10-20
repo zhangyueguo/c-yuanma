@@ -1,0 +1,6 @@
+1.php 程序员的技术成长规划，http://www.phperz.com/article/16/0516/220339.html
+
+
+2.利用php调用c语言  扩展php的功能   http://blog.csdn.net/samxx8/article/details/7069123
+
+
