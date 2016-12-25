@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+
+template <typename T>
+void display(T a)
+{
+	cout << a << endl;
+}
+
+template <typename T,class S>
+void display(T a,S s)
+{
+	cout << a << endl;
+	cout << s << endl;
+}
+
+template <typename T,int Size>
+void display(T a)
+{
+	for(int i=0;i<=Size;i++)
+	{
+	   cout << a << endl; 
+	} 
+}
+
+int main()
+{
+	display<int>(3);
+	
+	display<int,double>(5,5.0);
+	
+	display<int,2>(7);
+	return 0;
+}
